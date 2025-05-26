@@ -187,6 +187,8 @@
 
 
 
+
+
 </ul>
 
     </div>
@@ -426,6 +428,38 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#refleksi-terhadap-garis-y-x">3. <strong>Refleksi terhadap garis <span class="math notranslate nohighlight">\(y = x\)</span></strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">4. <strong>Refleksi terhadap garis <span class="math notranslate nohighlight">\(y = -x\)</span></strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#refleksi-terhadap-titik-asal-origin">5. <strong>Refleksi terhadap titik asal (origin)</strong></a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-eigenvector-dan-eigenvalue">Definisi Eigenvector dan Eigenvalue</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#mencari-eigenvalue-dan-eigenvector">Mencari Eigenvalue dan Eigenvector</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#diketahui-matriks">Diketahui matriks:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-1-menentukan-eigenvalue"><strong>Langkah 1: Menentukan Eigenvalue</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tujuan">Tujuan:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah">Langkah:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hitung-determinan">Hitung determinan:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#selesaikan-persamaan">Selesaikan persamaan:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-2-menentukan-eigenvector"><strong>Langkah 2: Menentukan Eigenvector</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#untuk-lambda-1">Untuk <span class="math notranslate nohighlight">\(\lambda = 1\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#untuk-lambda-3">Untuk <span class="math notranslate nohighlight">\(\lambda = 3\)</span></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ortonormalisasi-eigenvector"><strong>3. Ortonormalisasi Eigenvector</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Tujuan:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#untuk-vec-v-1-begin-bmatrix-1-1-end-bmatrix">Untuk <span class="math notranslate nohighlight">\(\vec{v}_1 = \begin{bmatrix} 1 \\ -1 \end{bmatrix}\)</span>:</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#hitung-panjang-norma-vektor">Hitung panjang (norma) vektor:</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#normalisasi">Normalisasi:</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#untuk-vec-v-2-begin-bmatrix-1-1-end-bmatrix">Untuk <span class="math notranslate nohighlight">\(\vec{v}_2 = \begin{bmatrix} 1 \\ 1 \end{bmatrix}\)</span>:</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#hitung-panjang-vektor">Hitung panjang vektor:</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Normalisasi:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6"><strong>Kesimpulan</strong></a></li>
 </ul>
 </li>
 </ul>
@@ -925,7 +959,7 @@ T(v_1, v_2) = (v_1 + v_2, v_1)
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x720d55ed2db0&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x74ca731570e0&gt;
 </pre></div>
 </div>
 <img alt="_images/c0c11010901089c1cdcd211f57f1a7c654a616426cc1d42a97bc59e822ae0544.png" src="_images/c0c11010901089c1cdcd211f57f1a7c654a616426cc1d42a97bc59e822ae0544.png" />
@@ -974,7 +1008,7 @@ T(v_1, v_2) = (v_1 + v_2, v_1)
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x720d55ed1340&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x74ca9c0ff7a0&gt;
 </pre></div>
 </div>
 <img alt="_images/3f6cde76aed9106db955b663d7a3df7cf30244d1f405035850f1478a9979e57d.png" src="_images/3f6cde76aed9106db955b663d7a3df7cf30244d1f405035850f1478a9979e57d.png" />
@@ -1025,10 +1059,233 @@ T(v_1, v_2) = (v_1 + v_2, v_1)
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x720d74214b00&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x74ca72f977a0&gt;
 </pre></div>
 </div>
 <img alt="_images/f64879b6250a6aff64a4703125a6e3f9e48a9cb3a35d0dfca632966b58ffab13.png" src="_images/f64879b6250a6aff64a4703125a6e3f9e48a9cb3a35d0dfca632966b58ffab13.png" />
+</div>
+</div>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="definisi-eigenvector-dan-eigenvalue">
+<h1>Definisi Eigenvector dan Eigenvalue<a class="headerlink" href="#definisi-eigenvector-dan-eigenvalue" title="Link to this heading">#</a></h1>
+<p>Eigenvector / Eigenvalue yaitu skalar yang digunakan untuk mengubah atau meregangkan vektor eigen.</p>
+<p>Lebih tepatnya, eigenvalue (nilai eigen) adalah sebuah skalar yang menyatakan seberapa besar sebuah eigenvector (vektor eigen) berubah arah atau panjangnya setelah suatu transformasi linier dilakukan.</p>
+<p>Sementara itu, eigenvector adalah vektor khusus yang arahnya tidak berubah setelah dikenai transformasi linier (misalnya oleh sebuah matriks), meskipun panjangnya bisa berubah.</p>
+<p>Secara matematis, hubungan antara matriks <span class="math notranslate nohighlight">\(A\)</span>, eigenvector <span class="math notranslate nohighlight">\(\vec{v}\)</span>, dan eigenvalue <span class="math notranslate nohighlight">\(\lambda\)</span> dinyatakan dalam persamaan:</p>
+<div class="math notranslate nohighlight">
+\[
+A \vec{v} = \lambda \vec{v}
+\]</div>
+<p>Artinya, ketika matriks <span class="math notranslate nohighlight">\(A\)</span> diaplikasikan ke vektor <span class="math notranslate nohighlight">\(\vec{v}\)</span>, hasilnya adalah vektor yang searah dengan <span class="math notranslate nohighlight">\(\vec{v}\)</span> itu sendiri, tetapi diperbesar atau diperkecil oleh faktor <span class="math notranslate nohighlight">\(\lambda\)</span>.</p>
+<hr class="docutils" />
+<p><strong>contoh</strong></p>
+<p>Sebuah panah yang digambarkan di bidang datar, dan panah tersebut mewakili sebuah vektor. Ketika dilakukan transformasi linier—misalnya rotasi, refleksi, atau penskalaan—umumnya arah dan panjang vektor akan berubah. Namun, ada vektor-vektor tertentu yang setelah dikenai transformasi, arah vektornya tetap sama, hanya panjangnya saja yang berubah (bisa bertambah, berkurang, atau bahkan dibalik arahnya).</p>
+<p>Vektor yang tidak berubah arah setelah transformasi inilah yang disebut eigenvector, dan skalar yang menyatakan perubahan panjang (diperbesar, diperkecil, atau dibalik) disebut eigenvalue. Jadi, eigenvalue menunjukkan sejauh mana eigenvector diregangkan atau dikompresi oleh transformasi tersebut.</p>
+</section>
+<hr class="docutils" />
+<section class="tex2jax_ignore mathjax_ignore" id="mencari-eigenvalue-dan-eigenvector">
+<h1>Mencari Eigenvalue dan Eigenvector<a class="headerlink" href="#mencari-eigenvalue-dan-eigenvector" title="Link to this heading">#</a></h1>
+<section id="diketahui-matriks">
+<h2>Diketahui matriks:<a class="headerlink" href="#diketahui-matriks" title="Link to this heading">#</a></h2>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+A = \begin{bmatrix} 2 &amp; 1 \\ 1 &amp; 2 \end{bmatrix}
+\end{split}\]</div>
+<hr class="docutils" />
+</section>
+<section id="langkah-1-menentukan-eigenvalue">
+<h2><strong>Langkah 1: Menentukan Eigenvalue</strong><a class="headerlink" href="#langkah-1-menentukan-eigenvalue" title="Link to this heading">#</a></h2>
+<section id="tujuan">
+<h3>Tujuan:<a class="headerlink" href="#tujuan" title="Link to this heading">#</a></h3>
+<p>Mencari <span class="math notranslate nohighlight">\(\lambda\)</span> yang memenuhi  <span class="math notranslate nohighlight">\(\det(A - \lambda I) = 0\)</span></p>
+</section>
+<section id="langkah">
+<h3>Langkah:<a class="headerlink" href="#langkah" title="Link to this heading">#</a></h3>
+<p>Kurangkan <span class="math notranslate nohighlight">\(\lambda\)</span> dari elemen diagonal utama matriks <span class="math notranslate nohighlight">\(A\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+A - \lambda I =
+\begin{bmatrix}
+2 - \lambda &amp; 1 \\
+1 &amp; 2 - \lambda
+\end{bmatrix}
+\end{split}\]</div>
+</section>
+</section>
+<section id="hitung-determinan">
+<h2>Hitung determinan:<a class="headerlink" href="#hitung-determinan" title="Link to this heading">#</a></h2>
+<div class="math notranslate nohighlight">
+\[
+\det(A - \lambda I) = (2 - \lambda)^2 - (1)(1)
+= (2 - \lambda)^2 - 1
+\]</div>
+</section>
+<section id="selesaikan-persamaan">
+<h2>Selesaikan persamaan:<a class="headerlink" href="#selesaikan-persamaan" title="Link to this heading">#</a></h2>
+<div class="math notranslate nohighlight">
+\[
+(2 - \lambda)^2 = 1
+\Rightarrow 2 - \lambda = \pm 1
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\lambda = 2 \pm 1 \Rightarrow \lambda = 1 \text{ dan } \lambda = 3
+\]</div>
+<p><strong>hasilnya :</strong></p>
+<div class="math notranslate nohighlight">
+\[
+\lambda_1 = 1,\quad \lambda_2 = 3
+\]</div>
+</section>
+<hr class="docutils" />
+<section id="langkah-2-menentukan-eigenvector">
+<h2><strong>Langkah 2: Menentukan Eigenvector</strong><a class="headerlink" href="#langkah-2-menentukan-eigenvector" title="Link to this heading">#</a></h2>
+<section id="untuk-lambda-1">
+<h3>Untuk <span class="math notranslate nohighlight">\(\lambda = 1\)</span><a class="headerlink" href="#untuk-lambda-1" title="Link to this heading">#</a></h3>
+<ol class="arabic">
+<li><p>Susun matriks <span class="math notranslate nohighlight">\(A - \lambda I\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+   A - I = \begin{bmatrix} 2 - 1 &amp; 1 \\ 1 &amp; 2 - 1 \end{bmatrix} = \begin{bmatrix} 1 &amp; 1 \\ 1 &amp; 1 \end{bmatrix}
+   \end{split}\]</div>
+</li>
+<li><p>Kalikan dengan vektor <span class="math notranslate nohighlight">\(\vec{v} = \begin{bmatrix} x \\ y \end{bmatrix}\)</span> dan setarakan dengan nol:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+   \begin{bmatrix} 1 &amp; 1 \\ 1 &amp; 1 \end{bmatrix} \begin{bmatrix} x \\ y \end{bmatrix} = \begin{bmatrix} x + y \\ x + y \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \end{bmatrix}
+   \end{split}\]</div>
+</li>
+<li><p>Diperoleh persamaan:</p>
+<div class="math notranslate nohighlight">
+\[
+   x + y = 0 \Rightarrow y = -x
+   \]</div>
+</li>
+</ol>
+<p>Maka, <strong>eigenvector untuk <span class="math notranslate nohighlight">\(\lambda = 1\)</span></strong> adalah:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\vec{v}_1 = \begin{bmatrix} 1 \\ -1 \end{bmatrix} \quad \text{(atau kelipatannya seperti } \begin{bmatrix} 2 \\ -2 \end{bmatrix})
+\end{split}\]</div>
+</section>
+<hr class="docutils" />
+<section id="untuk-lambda-3">
+<h3>Untuk <span class="math notranslate nohighlight">\(\lambda = 3\)</span><a class="headerlink" href="#untuk-lambda-3" title="Link to this heading">#</a></h3>
+<ol class="arabic">
+<li><p>Susun matriks <span class="math notranslate nohighlight">\(A - 3I\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+   A - 3I = \begin{bmatrix} 2 - 3 &amp; 1 \\ 1 &amp; 2 - 3 \end{bmatrix} = \begin{bmatrix} -1 &amp; 1 \\ 1 &amp; -1 \end{bmatrix}
+   \end{split}\]</div>
+</li>
+<li><p>Kalikan dengan vektor <span class="math notranslate nohighlight">\(\vec{v} = \begin{bmatrix} x \\ y \end{bmatrix}\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+   \begin{bmatrix} -1 &amp; 1 \\ 1 &amp; -1 \end{bmatrix} \begin{bmatrix} x \\ y \end{bmatrix} = \begin{bmatrix} -x + y \\ x - y \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \end{bmatrix}
+   \end{split}\]</div>
+</li>
+<li><p>Diperoleh persamaan:</p>
+<div class="math notranslate nohighlight">
+\[
+   -x + y = 0 \Rightarrow y = x
+   \]</div>
+</li>
+</ol>
+<p>Maka, <strong>eigenvector untuk <span class="math notranslate nohighlight">\(\lambda = 3\)</span></strong> adalah:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\vec{v}_2 = \begin{bmatrix} 1 \\ 1 \end{bmatrix} \quad \text{(atau kelipatannya seperti } \begin{bmatrix} 2 \\ 2 \end{bmatrix})
+\end{split}\]</div>
+</section>
+</section>
+<section id="ortonormalisasi-eigenvector">
+<h2><strong>3. Ortonormalisasi Eigenvector</strong><a class="headerlink" href="#ortonormalisasi-eigenvector" title="Link to this heading">#</a></h2>
+<section id="id4">
+<h3>Tujuan:<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
+<p>Mengubah panjang eigenvector menjadi <strong>1 satuan</strong> agar menjadi <strong>vektor ortonormal</strong>.</p>
+</section>
+<hr class="docutils" />
+<section id="untuk-vec-v-1-begin-bmatrix-1-1-end-bmatrix">
+<h3>Untuk <span class="math notranslate nohighlight">\(\vec{v}_1 = \begin{bmatrix} 1 \\ -1 \end{bmatrix}\)</span>:<a class="headerlink" href="#untuk-vec-v-1-begin-bmatrix-1-1-end-bmatrix" title="Link to this heading">#</a></h3>
+<section id="hitung-panjang-norma-vektor">
+<h4>Hitung panjang (norma) vektor:<a class="headerlink" href="#hitung-panjang-norma-vektor" title="Link to this heading">#</a></h4>
+<div class="math notranslate nohighlight">
+\[
+\| \vec{v}_1 \| = \sqrt{1^2 + (-1)^2} = \sqrt{2}
+\]</div>
+</section>
+<section id="normalisasi">
+<h4>Normalisasi:<a class="headerlink" href="#normalisasi" title="Link to this heading">#</a></h4>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\hat{v}_1 = \frac{1}{\sqrt{2}} \begin{bmatrix} 1 \\ -1 \end{bmatrix}
+\end{split}\]</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="untuk-vec-v-2-begin-bmatrix-1-1-end-bmatrix">
+<h3>Untuk <span class="math notranslate nohighlight">\(\vec{v}_2 = \begin{bmatrix} 1 \\ 1 \end{bmatrix}\)</span>:<a class="headerlink" href="#untuk-vec-v-2-begin-bmatrix-1-1-end-bmatrix" title="Link to this heading">#</a></h3>
+<section id="hitung-panjang-vektor">
+<h4>Hitung panjang vektor:<a class="headerlink" href="#hitung-panjang-vektor" title="Link to this heading">#</a></h4>
+<div class="math notranslate nohighlight">
+\[
+\| \vec{v}_2 \| = \sqrt{1^2 + 1^2} = \sqrt{2}
+\]</div>
+</section>
+<section id="id5">
+<h4>Normalisasi:<a class="headerlink" href="#id5" title="Link to this heading">#</a></h4>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\hat{v}_2 = \frac{1}{\sqrt{2}} \begin{bmatrix} 1 \\ 1 \end{bmatrix}
+\end{split}\]</div>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="id6">
+<h2><strong>Kesimpulan</strong><a class="headerlink" href="#id6" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Komponen</p></th>
+<th class="head"><p>Hasil</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Matriks A</strong></p></td>
+<td><p><span class="math notranslate nohighlight">\(\begin{bmatrix} 2 &amp; 1 \\ 1 &amp; 2 \end{bmatrix}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Eigenvalue</strong></p></td>
+<td><p><span class="math notranslate nohighlight">\(\lambda_1 = 1\)</span>, <span class="math notranslate nohighlight">\(\lambda_2 = 3\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Eigenvector</strong></p></td>
+<td><p><span class="math notranslate nohighlight">\(\vec{v}_1 = \begin{bmatrix} 1 \\ -1 \end{bmatrix}\)</span>, <span class="math notranslate nohighlight">\(\vec{v}_2 = \begin{bmatrix} 1 \\ 1 \end{bmatrix}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Vektor Ortonormal</strong></p></td>
+<td><p><span class="math notranslate nohighlight">\(\hat{v}_1 = \frac{1}{\sqrt{2}} \begin{bmatrix} 1 \\ -1 \end{bmatrix}\)</span>, <span class="math notranslate nohighlight">\(\hat{v}_2 = \frac{1}{\sqrt{2}} \begin{bmatrix} 1 \\ 1 \end{bmatrix}\)</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]])</span>
+<span class="n">eigenvalues</span><span class="p">,</span> <span class="n">eigenvectors</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">eig</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Eigenvalues:&quot;</span><span class="p">,</span> <span class="n">eigenvalues</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Eigenvectors:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">eigenvectors</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Eigenvalues: [3. 1.]
+Eigenvectors:
+ [[ 0.70710678 -0.70710678]
+ [ 0.70710678  0.70710678]]
+</pre></div>
+</div>
 </div>
 </div>
 </section>
@@ -1133,6 +1390,38 @@ T(v_1, v_2) = (v_1 + v_2, v_1)
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#refleksi-terhadap-garis-y-x">3. <strong>Refleksi terhadap garis <span class="math notranslate nohighlight">\(y = x\)</span></strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">4. <strong>Refleksi terhadap garis <span class="math notranslate nohighlight">\(y = -x\)</span></strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#refleksi-terhadap-titik-asal-origin">5. <strong>Refleksi terhadap titik asal (origin)</strong></a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-eigenvector-dan-eigenvalue">Definisi Eigenvector dan Eigenvalue</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#mencari-eigenvalue-dan-eigenvector">Mencari Eigenvalue dan Eigenvector</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#diketahui-matriks">Diketahui matriks:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-1-menentukan-eigenvalue"><strong>Langkah 1: Menentukan Eigenvalue</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tujuan">Tujuan:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah">Langkah:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hitung-determinan">Hitung determinan:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#selesaikan-persamaan">Selesaikan persamaan:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-2-menentukan-eigenvector"><strong>Langkah 2: Menentukan Eigenvector</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#untuk-lambda-1">Untuk <span class="math notranslate nohighlight">\(\lambda = 1\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#untuk-lambda-3">Untuk <span class="math notranslate nohighlight">\(\lambda = 3\)</span></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ortonormalisasi-eigenvector"><strong>3. Ortonormalisasi Eigenvector</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Tujuan:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#untuk-vec-v-1-begin-bmatrix-1-1-end-bmatrix">Untuk <span class="math notranslate nohighlight">\(\vec{v}_1 = \begin{bmatrix} 1 \\ -1 \end{bmatrix}\)</span>:</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#hitung-panjang-norma-vektor">Hitung panjang (norma) vektor:</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#normalisasi">Normalisasi:</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#untuk-vec-v-2-begin-bmatrix-1-1-end-bmatrix">Untuk <span class="math notranslate nohighlight">\(\vec{v}_2 = \begin{bmatrix} 1 \\ 1 \end{bmatrix}\)</span>:</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#hitung-panjang-vektor">Hitung panjang vektor:</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Normalisasi:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6"><strong>Kesimpulan</strong></a></li>
 </ul>
 </li>
 </ul>

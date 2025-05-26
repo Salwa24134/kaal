@@ -3,17 +3,15 @@
 Repository ini menampung materi dan tugas mata kuliah "Komputasi Aljabar Linear"
 
 ## identitas mahasiswa
-\documentclass{article}
-\usepackage[utf8]{inputenc}
 
-\begin{document}
+Nama: Salwa Sekar Gading
 
-NAMA \hspace{1.6cm}: SALWA SEKAR GADING \\
-NIM \hspace{1.8cm}: 24041100134 \\
-PRODI \hspace{1.2cm}: TEKNIK INFORMATIKA \\
-FAKULTAS \hspace{0.6cm}: TEKNIK
+NIM: 240411100134
 
-\end{document}
+Prodi: Teknik Informatika
+
+Fakultas: Teknik
+
 
 ```{tableofcontents}
 ```
